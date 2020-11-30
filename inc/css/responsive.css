@@ -27,7 +27,7 @@
  
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1024px) {
     .wrapper-service-card{
         justify-content:center;
     }
@@ -50,7 +50,7 @@
         max-width: 90%;
     }
 }
-@media(max-width: 750px) {
+@media(max-width: 768px) {
     
     .wrapper-content-detail {
         flex-direction: column;
@@ -79,28 +79,34 @@
     }
 }
 
-@media(max-width: 500px) {
-   
+@media(max-width: 540px) {
+    .brand-text-index,.brand-text{
+        font-size: 2rem;
+    }
+    nav {
+        width: 35rem;
+    }
+    .container{
+        max-width: 60%;
+    }
+    .header-picture-index {
+        height:40rem;
+    }
     .detail-header h1,.include-service h2,.not-include-service h2{
         font-size: 1.9rem;
     }
     .header-picture-h1-index{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
     .header-picture-paragraph-index {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .navigation {
         width: 28rem;
     }
-
+    
     .navigation-search-input {
         width: 20rem;
-    }
-
-    .hotel-heading {
-        font-size: 2rem;
-        margin: auto 0;
     }
 
     .banner {
@@ -150,22 +156,6 @@
         width: 12rem;
     }
 
-    .room-card-heading {
-        font-size: 1.5rem;
-    }
-
-    .room-price {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        text-align: left;
-    }
-
-    .room-card-btn {
-        width: 12rem;
-        padding: 1rem .5rem;
-        font-size: 1rem;
-    }
-
     .customers-paragraph {
         font-size: 1.4rem;
         width: 80%;
@@ -182,4 +172,17 @@
     .image-wrapper {
         width: 9rem;
     }
+    .navbar-header {
+        font-size: 2.6rem;
+    }
+}
+@media(max-width: 375px) {
+    nav {
+        width: 30rem;
+    }
+    
+    .navbar-search-input {
+        width: 20rem;
+    }
+
 }
