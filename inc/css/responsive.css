@@ -1,0 +1,185 @@
+@media(max-width: 1400px) {
+    .customers-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        max-width: 80%;
+    }
+    .customer-card:first-child {
+        margin-bottom: 3rem;
+    }
+
+    .main-part {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        display: flex;
+    }
+
+    .footer-list-item {
+        margin-right: 3rem;
+    }
+}
+
+@media(max-width: 1200px) {
+ 
+}
+
+@media(max-width: 900px) {
+    .wrapper-service-card{
+        justify-content:center;
+    }
+    .header-picture-h1-index{
+        font-size: 4.7rem;
+    }
+    .banner {
+        text-align: center;
+    }
+
+    .header-picture-paragraph-index {
+        font-size: 2.4rem;
+    }
+
+    .banner-button {
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+@media(max-width: 750px) {
+    
+    .wrapper-content-detail {
+        flex-direction: column;
+    }
+    .wrapper-detail-price{
+        width:100%;
+        order: -1;
+    }
+    .header-picture-h1-index{
+        font-size: 3.6rem;
+    }
+    .header-picture-paragraph-index {
+        font-size: 2.2rem;
+    }
+    .footer-list {
+        display: block;
+    }
+
+    .creator-part {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright-text {
+        order: 1;
+    }
+}
+
+@media(max-width: 500px) {
+   
+    .detail-header h1,.include-service h2,.not-include-service h2{
+        font-size: 1.9rem;
+    }
+    .header-picture-h1-index{
+        font-size: 2.4rem;
+    }
+    .header-picture-paragraph-index {
+        font-size: 1.5rem;
+    }
+    .navigation {
+        width: 28rem;
+    }
+
+    .navigation-search-input {
+        width: 20rem;
+    }
+
+    .hotel-heading {
+        font-size: 2rem;
+        margin: auto 0;
+    }
+
+    .banner {
+        height: 100%;
+        margin-top: -10rem;
+    }
+
+    .banner-heading {
+        font-size: 3rem;
+    }
+
+    .banner-paragraph {
+        font-size: 2rem;
+    }
+
+    .about-us {
+        padding-bottom: 15rem;
+    }
+
+    .about-us-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-us-content {
+        padding: 5rem;
+    }
+
+    .image {
+        width: 13rem;
+    }
+
+    .common-heading {
+        font-size: 2rem;
+    }
+
+    .small-underline {
+        width: 5rem;
+    }
+
+    .big-underline {
+        width: 12rem;
+    }
+
+    .room-card-heading {
+        font-size: 1.5rem;
+    }
+
+    .room-price {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .room-card-btn {
+        width: 12rem;
+        padding: 1rem .5rem;
+        font-size: 1rem;
+    }
+
+    .customers-paragraph {
+        font-size: 1.4rem;
+        width: 80%;
+    }
+
+    .main-part {
+        padding: 2rem;
+    }
+
+    .footer-input {
+        width: 12rem;
+    }
+
+    .image-wrapper {
+        width: 9rem;
+    }
+}

@@ -1,0 +1,130 @@
+/* Header Index */
+.header-index{
+    height:80vh;
+    position: relative;
+    margin-left:6.5rem;
+    background:url("../img/background-seat-1.jpg") no-repeat center center / cover;
+    animation: fade-background-header 10s 3s infinite;
+    z-index:98;
+}
+.header-index::before{
+    content:"";
+    width:100%;
+    height: 80vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0.6));
+}
+@keyframes fade-background-header {
+    0% {
+        background:url("../img/background-seat-2.jpg") no-repeat center center / cover;
+    }
+    33% {
+        background:url("../img/background-seat-3.jpg") no-repeat center center / cover;
+    }
+    66% {
+        background:url("../img/background-seat-4.jpg") no-repeat center center / cover;
+    }
+    100% {
+        background:url("../img/background-seat-1.jpg") no-repeat center center / cover;
+    }
+}
+.brand-index {
+    display: flex;
+    cursor: pointer;
+    align-items: baseline;
+}
+.icon-banner-index {
+    font-size: 25px;
+    color:#fff;
+    z-index: 97;
+}
+.icon-banner-index i {
+    margin-right:20px;
+    margin-left:20px;
+}
+.brand-text-index {
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color:#fff;
+    letter-spacing: .2rem;
+    z-index: 97;
+}
+.header-picture-index {
+    height:65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+.header-picture-h1-index {
+    font-family: 'Josefin Sans',sans-serif;
+    font-size:7rem;
+    font-weight:400;
+    margin-bottom:0;
+    animation: fade-paragraph 2s;
+    z-index: 97;
+}
+.header-picture-paragraph-index{
+    max-width: 80%;
+    font-size:1.6rem;
+    font-weight: 300;
+    animation: fade-paragraph 1.5s .5s backwards;
+    z-index: 97;
+}
+.header-picture-paragraph-index::before {
+    content:"\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
+}
+.header-picture-button-index{
+    width:21rem;
+    padding:1.2rem 2rem;
+    font-size: 1.5rem;
+    color:#fff;
+    background-color: #ff9d26;
+    border-radius: 24px;
+    text-align: center;
+    opacity: .8;
+    outline: none;
+    border:none;
+    cursor:pointer;
+    font-weight: 100;
+}
+.header-picture-button-index:active {
+    transform:translateY(.2rem);
+}
+/* End Header Index*/
+
+/* Header General */
+.header {
+    margin-left:6.5rem;
+    box-shadow: -1px -1px 12px 0px rgba(0,0,0,0.75);
+}
+.brand {
+    display: flex;
+    cursor: pointer;
+    align-items: baseline;
+    background-color: #fff;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.icon-banner {
+    font-size: 25px;
+    color:#000;
+    z-index: 97;
+}
+.icon-banner i {
+    margin-right:20px;
+    margin-left:20px;
+}
+.brand-text {
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color:#000;
+    letter-spacing: .2rem;
+    z-index: 97;
+}
+/* End Header General */

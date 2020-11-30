@@ -1,0 +1,209 @@
+/* Navbar */
+/* Sidebar */
+.sidebar {
+    width:6.5rem;
+    height:100%;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-right: 1px solid #EEEEEE;
+    z-index:100;
+}
+/* Burger Icon*/
+.menu-icon {
+    margin-top:2.5rem;
+}
+.burger {
+    width:2.3rem;
+    height:.2rem;
+    background-color: #000;
+    margin-bottom:.6rem;
+}
+.level-1, .level-3 {
+    width:1.6rem;
+    transition: all .3s;
+}
+.menu-icon:hover .burger {
+    width:2.3rem;
+}
+.checkbox:checked ~ nav {
+    left: 6.5rem;
+}
+
+.checkbox:checked ~ .sidebar .level-1 {
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .level-2 {
+    opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .level-3 {
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 2.5rem;
+}
+/* End Burger Icon*/
+.social-icons-list {
+    height:25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style:none;
+    padding:0;
+}
+.social-icon-link {
+    font-size:1.8rem;
+    color:#999999;
+    transition: color .3s;
+}
+.social-icon-link:hover {
+    color:#404040;
+}
+.call-icon-wrapper {
+    font-size: 2rem;
+    transform: rotateZ(-45deg);
+    margin-bottom:2rem;
+    cursor:pointer;
+}
+.call-icon-wrapper a {
+    color:#999999;
+    transition: color .3s;
+}
+.call-icon-wrapper a:hover {
+    color:#404040;
+}
+/* End of Sidebar*/
+
+/* Navbar SEO tag */
+nav {
+    width:40rem;
+    height:100%;
+    position:fixed;
+    left:-33.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to top,rgba(0, 0, 0,.4),rgba(0, 0, 0, 0.8)),url("../img/background-navbar.png") center no-repeat;
+    background-size:cover;
+    transition: left .8s cubic-bezier(1, 0, 0, 1);
+    z-index: 99;
+}
+.navbar-header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: #fff;
+    text-align: center;
+}
+.navbar-search{
+    position: relative;
+}
+/* Navbar Form Search */
+.navbar-search-input {
+    width: 30rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #deaa86;
+    letter-spacing: .1rem;
+    outline: none;
+    border: .1rem solid #555;
+    transition: background-color .3s;
+}
+
+
+.navbar-search-btn {
+    border: none;
+    background-color: #FF5722;
+    color: #fff;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding:9px;
+    cursor: pointer;
+}
+
+.navbar-search-btn:focus {
+    outline: none;
+}
+
+.navbar-link:hover {
+    color:#f4e285;
+}
+
+.navbar-link:hover::before,
+.navbar-link:hover::after {
+    width:3rem;
+}
+/* End Navbar Form Search */
+
+.navbar-menus-list {
+    height:28rem;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.navbar-menu-item {
+    position: relative;
+}
+.navbar-menu-link {
+    color:#fff;
+    font-size:1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration:none;
+    transition:color .5s;
+}
+.navbar-menu-link::before {
+    content:"";
+    width:0rem;
+    height:.1rem;
+    background-color: #f4e285;
+    position: absolute;
+    top:1rem;
+    left:-4rem;
+    transition: width .5s;
+}
+
+.navbar-menu-link::after {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #f4e285;
+    position: absolute;
+    top: 1rem;
+    right: -4rem;
+    transition: width .5s;
+}
+.navbar-menu-link:hover {
+    color:#f4e285;
+}
+
+.navbar-menu-link:hover::before,
+.navbar-menu-link:hover::after {
+    width:3rem;
+}
+.copyright {
+    color:#fff;
+    font-size:1.2rem;
+    margin-bottom:1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End Navbar SEO tag */
+
+/* End of Navbar*/
