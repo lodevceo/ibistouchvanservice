@@ -184,5 +184,7 @@
     .navbar-search-input {
         width: 20rem;
     }
-
+    .brand-text-index,.brand-text{
+        font-size: 1.5rem;
+    }
 }
